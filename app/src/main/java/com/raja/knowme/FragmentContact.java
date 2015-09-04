@@ -72,10 +72,7 @@ public class FragmentContact extends Fragment {
 		//	});
 		mFbBtn.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				Intent fb = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/A.R.Raajaa"));
-				startActivity(fb);
-
-				openFacebook(getActivity());
+			openFacebook(getActivity());
 			}
 		});
         mMailBtn.setOnClickListener(new OnClickListener() {
@@ -94,8 +91,10 @@ public class FragmentContact extends Fragment {
 		try {
 			context.getPackageManager().getPackageInfo("com.facebook.katana", 0);
 			Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/100004830370118"));
+			startActivity(in);
 		} catch (Exception e) {
 			Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/A.R.Raajaa"));
+			startActivity(in);
 		}
 	}
 
