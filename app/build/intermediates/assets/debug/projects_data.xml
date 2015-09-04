@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+Copyright 2015 Raaja Ar
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<knowme first-name="Azmeer" last-name="Raja" middle-name="">
+    <!-- Profile detials -->
+    <profile>
+        <profile-detail name="About Me">
+            <item-details>
+                Yet To Update
+            </item-details>
+        </profile-detail>
+
+
+
+    </profile>
+
+    <!-- Skills detials -->
+    <skills>
+
+        <skills-details name="Yet To Update"></skills-details>
+        <skills-details name="Yet To Update"></skills-details>
+        <skills-details name="Yet To Update"></skills-details>
+        <skills-details name="Yet To Update"></skills-details>
+        <skills-details name="Yet To Update"></skills-details>
+        <skills-details name="Yet To Update"></skills-details>
+
+
+    </skills>
+
+    <!-- Specialization detials -->
+    <specialization>
+
+        <specialization-details name="Yet To Update"></specialization-details>
+        <specialization-details name="Yet To Update"></specialization-details>
+        <specialization-details name="Yet To Update"></specialization-details>
+        <specialization-details name="Yet To Update"></specialization-details>
+        <specialization-details name="Yet To Update"></specialization-details>
+        <specialization-details name="Yet To Update"></specialization-details>
+        <specialization-details name="Yet To Update"></specialization-details>
+
+    </specialization>
+
+    <!-- Projects detials -->
+    <projects>
+        <company name="Yet To Update Company Name">
+            <projects-details name="Yet To UpdateProject Name">
+                Yet To Update Project Description
+            </projects-details>
+        </company>
+
+    </projects>
+
+    <!-- Qualification detials -->
+    <qualification>
+        <institution name="Yet To Update Institution Name">
+            <qualification-details name="Yet To Update Course Name">
+                Yet To Update Course Description
+            </qualification-details>
+        </institution>
+        <institution name="Yet To Update Institution Name">
+            <qualification-details name="Yet To Update Course Name">
+                Yet To Update Course Description
+            </qualification-details>
+            <qualification-details name="Yet To Update Course Name">
+                Yet To Update Course Description
+            </qualification-details>
+        </institution>
+    </qualification>
+
+    <!-- Work Exp detials -->
+    <work-exp>
+        <work-detial name="Yet To Update Company Name" period="April 2012 – Present">
+            Yet To Update
+        </work-detial>
+        <work-detial name="Yet To Update Company Name" period="April 2012 – Present">
+            Yet To Update
+        </work-detial>
+    </work-exp>
+
+    <!-- References detials -->
+    <references>
+        <references-detail name="Yet To Update Referee Name">
+            <item-details>
+                Yet To Update Referee Details
+            </item-details>
+        </references-detail>
+        <references-detail name="Yet To Update Referee Name">
+            <item-details>
+                Yet To Update Referee Details
+            </item-details>
+        </references-detail>
+
+
+    </references>
+
+    <!-- Testimonials detials -->
+    <testimonials>
+        <testimonials-detail name="Yet To Update Testimonial Name">
+            <item-details>
+                Yet To Update Testimonial Details
+            </item-details>
+        </testimonials-detail>
+        <testimonials-detail name="Yet To Update Testimonial Name">
+            <item-details>
+                Yet To Update Testimonial Details
+            </item-details>
+        </testimonials-detail>
+        <testimonials-detail name="Yet To Update Testimonial Name">
+            <item-details>
+                Yet To Update Testimonial Details
+            </item-details>
+        </testimonials-detail>
+        <testimonials-detail name="Yet To Update Testimonial Name">
+            <item-details>
+                Yet To Update Testimonial Details
+            </item-details>
+        </testimonials-detail>
+
+    </testimonials>
+
+    <!-- Contact detials -->
+    <contact>
+        <address>
+            Tamil Nadu, India
+        </address>
+
+        <!--  <phone>+919750462753</phone>  -->
+
+        <mail>azmeerraaja@live.com</mail>
+
+    </contact>
+
+</knowme>
