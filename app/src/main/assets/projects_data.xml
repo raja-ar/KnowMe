@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><!--
-Copyright 2015 Raaja Ar
+  ~ Copyright 2015 Azmeer Raja
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~
+  -->
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
 <knowme first-name="Azmeer" last-name="Raja" middle-name="">
     <!-- Profile detials -->
     <profile>
         <profile-detail name="About Me">
             <item-details>
-                Yet To Update
+                Experienced in mobile application development and underlying concepts of mobile
+                software architecture and user interface design. Developing enterprise applications.
+            </item-details>
+            <item-details>
+                Can work with graphic designing softwares like Adobe Photoshop, Adobe illustrator,
+                Coreldraw. Knowledge about color theory and typography which were/are actively
+                implemented on all architected software.
             </item-details>
         </profile-detail>
-
+        <profile-detail name="Certifications">
+            <item-details>Have Certified in “Master In Multimedia Designing and Editing”
+            </item-details>
+            <item-details>Have Certified in “Certificate in Computer Application”</item-details>
+            <item-details>Have Certified in “Diploma in Computer Application”</item-details>
+            <item-details>Have Certified in “CCNA Exploration-CISCO Certified”</item-details>
+        </profile-detail>
+        <profile-detail name="My Motto">
+            <item-details>Aim High - Achieve Higher</item-details>
+        </profile-detail>
 
 
     </profile>
@@ -29,11 +46,13 @@ limitations under the License.
     <!-- Skills detials -->
     <skills>
 
-        <skills-details name="Yet To Update"></skills-details>
-        <skills-details name="Yet To Update"></skills-details>
-        <skills-details name="Yet To Update"></skills-details>
-        <skills-details name="Yet To Update"></skills-details>
-        <skills-details name="Yet To Update"></skills-details>
+        <skills-details name="Programming Languages : C, C++,Html,Dhtml,Java"></skills-details>
+        <skills-details
+            name="Operating System : Windows XP/Vista/7/8,Android and Linux"></skills-details>
+        <skills-details
+            name="Design tools : Adobe Photoshop, Adobe After Effects, Adobe Premier, Adobe Soundbooth,  Adobe Flash,  Adobe Indesign,  Adobe Dreamweaver, Adobe illustrator, Coreldraw."></skills-details>
+        <skills-details
+            name="Others : Android Studio ,Unity, Phonegap, Ms Office, Tally."></skills-details>
         <skills-details name="Yet To Update"></skills-details>
 
 
@@ -42,21 +61,26 @@ limitations under the License.
     <!-- Specialization detials -->
     <specialization>
 
-        <specialization-details name="Yet To Update"></specialization-details>
-        <specialization-details name="Yet To Update"></specialization-details>
-        <specialization-details name="Yet To Update"></specialization-details>
-        <specialization-details name="Yet To Update"></specialization-details>
-        <specialization-details name="Yet To Update"></specialization-details>
-        <specialization-details name="Yet To Update"></specialization-details>
+        <specialization-details name="Android App Development"></specialization-details>
+        <specialization-details name=" Web Designing"></specialization-details>
+        <specialization-details name=" Audio and Video Editing"></specialization-details>
+        <specialization-details name="Graphic/Image Designing"></specialization-details>
+        <specialization-details
+            name=" Hardware and Software Troubleshooting"></specialization-details>
         <specialization-details name="Yet To Update"></specialization-details>
 
     </specialization>
 
     <!-- Projects detials -->
     <projects>
-        <company name="Yet To Update Company Name">
-            <projects-details name="Yet To UpdateProject Name">
-                Yet To Update Project Description
+        <company name="FreeLancer">
+            <projects-details name="Maari">
+                Maari , A simple and easy-to-use unit converter to handle any conversion you'll ever
+                need.
+            </projects-details>
+            <projects-details name="Know Me">
+                Know Me , A simple,elegant App just to show Printed-“Resumes can’t really weigh how
+                good a programmer you are,” Ravisankar-Founder of HackerRank.
             </projects-details>
         </company>
 
@@ -64,28 +88,33 @@ limitations under the License.
 
     <!-- Qualification detials -->
     <qualification>
-        <institution name="Yet To Update Institution Name">
-            <qualification-details name="Yet To Update Course Name">
-                Yet To Update Course Description
+        <institution name="Hindusthan Institute of Technology">
+            <qualification-details
+                name="Bachelor of Technology in Information Technology,(2014)"></qualification-details>
+        </institution>
+        <institution name="Apollo University">
+            <qualification-details
+                name="Master In Multimedia Designing and Editing"></qualification-details>
+        </institution>
+        <institution name="Veveaham Higher Secondary School">
+            <qualification-details name="XII, Higher Secondary,(2010)">
+                Percentage: 85%
+            </qualification-details>
+            <qualification-details name="X, State Board,(2008)">
+                Percentage: 69%
             </qualification-details>
         </institution>
-        <institution name="Yet To Update Institution Name">
-            <qualification-details name="Yet To Update Course Name">
-                Yet To Update Course Description
-            </qualification-details>
-            <qualification-details name="Yet To Update Course Name">
-                Yet To Update Course Description
-            </qualification-details>
-        </institution>
+
+
     </qualification>
 
     <!-- Work Exp detials -->
     <work-exp>
-        <work-detial name="Yet To Update Company Name" period="April 2012 – Present">
-            Yet To Update
+        <work-detial name="FreeLancer" period="March 2015 – Present">
+            UI Designer and Jr.Developer,Android Application Development
         </work-detial>
-        <work-detial name="Yet To Update Company Name" period="April 2012 – Present">
-            Yet To Update
+        <work-detial name="Hitech Computers" period="August 2014 – March 2015">
+            UI Designer,Android Application Development
         </work-detial>
     </work-exp>
 
@@ -132,8 +161,7 @@ limitations under the License.
 
     <!-- Contact detials -->
     <contact>
-        <address>
-            Tamil Nadu, India
+        <address>Tamil Nadu , India
         </address>
 
         <!--  <phone>+919750462753</phone>  -->
@@ -141,5 +169,75 @@ limitations under the License.
         <mail>azmeerraaja@live.com</mail>
         <mail>developer.raaja@gmail.com</mail>
     </contact>
+    <!--
+     OBJECTIVE
 
+     Work hard, Play smart, Use my skills to improve myself and the Company where I work(Think, Aim and Achieve higher)
+
+     EDUCATIONAL QUALIFIACTIONS
+
+     Bachelor of Technology in Information Technology(2014)(pursuing).
+     Hindusthan Institute of  Technology , Coimbatore.
+
+     XII, Higher Secondary,(2010)
+     Veveaham  Higher Secondary School, Dharapuram.
+     Percentage: 85%
+
+     X, State Board, (2008)
+     Veveaham  Higher Secondary School, Dharapuram.
+     Percentage: 69%
+
+     TECHNICAL SKILLS
+
+     Programming Languages	:  C, C++,Html,Dhtml,(Learning Java)
+     Operating System		:  Windows XP/Vista/7/8,Android&Open source
+     Software tools          : Eclipse IDE, Android Studio IDE, Ms Office, Adobe Photoshop, Adobe After Effects, Adobe Premier, Adobe Soundbooth,  Adobe Flash,  Adobe Indesign,  Adobe Dreamweaver, Adobe illustrator, Coreldraw, Tally.
+
+     AREAS OF INTEREST
+     Android App Development
+     Web Designing,
+     Audio & Video Editing,
+     Image/Poster Designing,
+     Web Developing.
+     Hardware and Software Troubleshooting (Windows 7)
+
+     CO-CURRICULAR ACTIVITIES
+
+     Presented a paper on “USB 3.0” in”ZEIGEN’11”-KLN College of Engineering , Madurai.
+     Participated in One day Workshop on “MAYA”organized by Adoro Multimedia”WORLD MULTIMEDIA ASSOCIATION”at Coimbatore Institute of Technology.
+     Presented a paper on “BIOID’s- A Security Guaranteed Systems” in Vellamal College of Engineering, Madurai.
+     Participated in One day Workshop on”Cyber Security & Malware Analysis”
+     In typewriting I have undergone a exam and have secured First class with distinction.
+
+     EXPERIENCE
+     The Chennai Silks Corporate,Tirupur
+     Dept: Android App Development
+     Role: UI Designer
+     March 2015-Present
+     EXTRA CURRICULAR ACTIVITIES
+
+         Have participated in NSS Campagains.
+
+     CERTIFICATIONS
+
+     Have Certified in “Certificate in Computer Application”
+     Have Certified in “Diploma in Computer Application”
+     Have Certified in “CCNA Exploration-CISCO Certified”
+     Have Certified in “Master In Multimedia Designing &Editing”
+
+     PROJECT
+
+     Done a Mini Project on “ONLINE LIBRARY MANAGEMENT”(Individual Project)
+     Final Year Project Title-“ MOBILITY MANAGEMENT APPROACHES FOR MOBILE IP NETWORKS: PERFORMANCE COMPARISON AND USE RECOMMENDATIONS”
+     -Duration: 2-3 Months.
+     -Role: Coding ,Designing and Documentation.
+     -Description:  Sending Packages to the various mobile ip's to compare other networking mobilities performance .
+
+
+     REFERENCE
+     Dr. S.J. Narmadha M.Tech., Ph.D.
+     Professor And Head of The Department
+     Department of Information Technology
+     Hindustan Institute of Technology
+     Coimbatore.           -->
 </knowme>

@@ -1,19 +1,22 @@
-package com.raja.knowme;
 /*
  * Copyright 2015 Azmeer Raja
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *        http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ *
  */
+
+package com.raja.knowme;
+
 import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.AsyncTask;
@@ -38,8 +41,8 @@ import android.widget.ViewSwitcher.ViewFactory;
 import com.raja.knowme.functions.AppCommonFunctions;
 import com.raja.knowme.preferences.AppPreferences;
 import com.raja.knowme.variables.AppGlobalVariables;
-import com.raja.knowme.variables.TestimonialsDetailsObject;
 import com.raja.knowme.variables.KnowMeDataObject;
+import com.raja.knowme.variables.TestimonialsDetailsObject;
 import com.raja.knowme.widgets.AppTextView;
 
 import java.util.ArrayList;
@@ -204,8 +207,8 @@ public class FragmentTestimonials extends Fragment {
     }
 
     /**
-     * @usage new LoadData().execute(new Void[0]);
      * @author Azmeer Raja
+     * @usage new LoadData().execute(new Void[0]);
      */
     private class LoadData extends AsyncTask<Void, Void, String> {
 

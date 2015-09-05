@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-Copyright 2015 Raaja Ar
+Copyright 2015 Azmeer Raja
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,13 +15,13 @@ limitations under the License.
 -->
 
 <set xmlns:android="http://schemas.android.com/apk/res/android">
-	<translate
-		android:duration="500"
-		android:fromXDelta="100%p"
-		android:toXDelta="0" />
-	<alpha
-		android:duration="100"
-		android:fromAlpha="0.0"
-		android:toAlpha="1.0" />
+    <translate
+        android:duration="500"
+        android:fromXDelta="100%p"
+        android:toXDelta="0" />
+    <alpha
+        android:duration="100"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
 </set>
 <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KnowMe/app/src/main/res/anim/push_left_in.xml -->

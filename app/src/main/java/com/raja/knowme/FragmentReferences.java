@@ -1,19 +1,22 @@
-package com.raja.knowme;
 /*
  * Copyright 2015 Azmeer Raja
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *        http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ *
  */
+
+package com.raja.knowme;
+
 import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.AsyncTask;
@@ -38,8 +41,8 @@ import android.widget.ViewSwitcher.ViewFactory;
 import com.raja.knowme.functions.AppCommonFunctions;
 import com.raja.knowme.preferences.AppPreferences;
 import com.raja.knowme.variables.AppGlobalVariables;
-import com.raja.knowme.variables.ReferencesDetailsObject;
 import com.raja.knowme.variables.KnowMeDataObject;
+import com.raja.knowme.variables.ReferencesDetailsObject;
 import com.raja.knowme.widgets.AppTextView;
 
 import java.util.ArrayList;
@@ -79,7 +82,7 @@ public class FragmentReferences extends Fragment {
         mScrollview = (ScrollView) mHolderView.findViewById(R.id.references_scrollview);
         mInstructionBtn = (RelativeLayout) mHolderView.findViewById(R.id.instrunstions_layout);
 
-        if(!pref.getReferencesFirstRun()){
+        if (!pref.getReferencesFirstRun()) {
             mInstructionBtn.setVisibility(RelativeLayout.GONE);
         }
 
@@ -119,21 +122,27 @@ public class FragmentReferences extends Fragment {
 
         gestureDetector = new GestureDetector(getActivity(), new OnGestureListener() {
 
-            public boolean onSingleTapUp(MotionEvent e) {return false;}
+            public boolean onSingleTapUp(MotionEvent e) {
+                return false;
+            }
 
-            public void onShowPress(MotionEvent e) {}
+            public void onShowPress(MotionEvent e) {
+            }
 
-            public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {return false;}
+            public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+                return false;
+            }
 
-            public void onLongPress(MotionEvent e) {}
+            public void onLongPress(MotionEvent e) {
+            }
 
             public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
                 try {
                     if (Math.abs(e1.getY() - e2.getY()) > AppGlobalVariables.SWIPE_MAX_OFF_PATH)
                         return false;
                     /** Left swipe */
-                    if(e1.getX() - e2.getX() > AppGlobalVariables.SWIPE_MIN_DISTANCE && Math.abs(velocityX) > AppGlobalVariables.SWIPE_THRESHOLD_VELOCITY){
-                        if(count < (MAX_COUNT-1))
+                    if (e1.getX() - e2.getX() > AppGlobalVariables.SWIPE_MIN_DISTANCE && Math.abs(velocityX) > AppGlobalVariables.SWIPE_THRESHOLD_VELOCITY) {
+                        if (count < (MAX_COUNT - 1))
                             nextDetail();
                         else {
                             mHeaderSwitcher.startAnimation(shake);
@@ -141,19 +150,22 @@ public class FragmentReferences extends Fragment {
                         }
                         /** Right Swipe */
                     } else if (e2.getX() - e1.getX() > AppGlobalVariables.SWIPE_MIN_DISTANCE && Math.abs(velocityX) > AppGlobalVariables.SWIPE_THRESHOLD_VELOCITY) {
-                        if(count != 0)
+                        if (count != 0)
                             previousDetail();
                         else {
                             mHeaderSwitcher.startAnimation(shake);
                             mBodySwitcher.startAnimation(shake);
                         }
                     }
-                } catch (Exception e) {}
+                } catch (Exception e) {
+                }
 
                 return false;
             }
 
-            public boolean onDown(MotionEvent e) {return false;}
+            public boolean onDown(MotionEvent e) {
+                return false;
+            }
         });
 
         gestureListener = new View.OnTouchListener() {
@@ -166,7 +178,7 @@ public class FragmentReferences extends Fragment {
         return mHolderView;
     }
 
-    private void nextDetail(){
+    private void nextDetail() {
         count++;
         mHeaderSwitcher.setInAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.push_left_in));
         mHeaderSwitcher.setOutAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.push_left_out));
@@ -195,8 +207,8 @@ public class FragmentReferences extends Fragment {
     }
 
     /**
-     * @usage new LoadData().execute(new Void[0]);
      * @author Azmeer Raja
+     * @usage new LoadData().execute(new Void[0]);
      */
     private class LoadData extends AsyncTask<Void, Void, String> {
 
@@ -213,7 +225,7 @@ public class FragmentReferences extends Fragment {
         }
 
         protected void onPostExecute(String result) {
-            if(result.equals("true")) {
+            if (result.equals("true")) {
                 setUIData(count);
                 mProgressDialog.dismiss();
             } else

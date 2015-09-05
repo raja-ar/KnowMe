@@ -43,6 +43,6 @@
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-        <item name="android:windowBackground">@color/app_bg_color</item>     
+        <item name="android:windowBackground">@color/app_bg_color</item>
     </style>
 </resources>

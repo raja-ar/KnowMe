@@ -1,19 +1,22 @@
-package com.raja.knowme;
 /*
  * Copyright 2015 Azmeer Raja
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *        http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ *
  */
+
+package com.raja.knowme;
+
 import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.AsyncTask;
@@ -39,15 +42,15 @@ import com.raja.knowme.adapters.QualificationListAdapter;
 import com.raja.knowme.functions.AppCommonFunctions;
 import com.raja.knowme.preferences.AppPreferences;
 import com.raja.knowme.variables.AppGlobalVariables;
-import com.raja.knowme.variables.QualificationObject;
 import com.raja.knowme.variables.KnowMeDataObject;
+import com.raja.knowme.variables.QualificationObject;
 import com.raja.knowme.widgets.AppTextView;
 
 import java.util.ArrayList;
 
 public class FragmentQualification extends Fragment {
 
-    private int MAX_COUNT = 2;
+    private int MAX_COUNT = 3;
     private GestureDetector gestureDetector;
     private View.OnTouchListener gestureListener;
 
@@ -83,7 +86,7 @@ public class FragmentQualification extends Fragment {
 
         qualification_list.setSelector(this.getResources().getDrawable(R.drawable.transparent_shape));
 
-        if(!pref.getQualificationFirstRun()){
+        if (!pref.getQualificationFirstRun()) {
             instruction_btn.setVisibility(RelativeLayout.GONE);
         }
 
@@ -114,21 +117,27 @@ public class FragmentQualification extends Fragment {
         // Gesture detection
         gestureDetector = new GestureDetector(getActivity(), new OnGestureListener() {
 
-            public boolean onSingleTapUp(MotionEvent e) {return false;}
+            public boolean onSingleTapUp(MotionEvent e) {
+                return false;
+            }
 
-            public void onShowPress(MotionEvent e) {}
+            public void onShowPress(MotionEvent e) {
+            }
 
-            public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {return false;}
+            public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+                return false;
+            }
 
-            public void onLongPress(MotionEvent e) {}
+            public void onLongPress(MotionEvent e) {
+            }
 
             public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
                 try {
                     if (Math.abs(e1.getY() - e2.getY()) > AppGlobalVariables.SWIPE_MAX_OFF_PATH)
                         return false;
                     /** Left swipe */
-                    if(e1.getX() - e2.getX() > AppGlobalVariables.SWIPE_MIN_DISTANCE && Math.abs(velocityX) > AppGlobalVariables.SWIPE_THRESHOLD_VELOCITY){
-                        if(count < (MAX_COUNT-1))
+                    if (e1.getX() - e2.getX() > AppGlobalVariables.SWIPE_MIN_DISTANCE && Math.abs(velocityX) > AppGlobalVariables.SWIPE_THRESHOLD_VELOCITY) {
+                        if (count < (MAX_COUNT - 1))
                             nextInstitution();
                         else {
                             institution_switcher.startAnimation(shake);
@@ -136,19 +145,22 @@ public class FragmentQualification extends Fragment {
                         }
                         /** Right Swipe */
                     } else if (e2.getX() - e1.getX() > AppGlobalVariables.SWIPE_MIN_DISTANCE && Math.abs(velocityX) > AppGlobalVariables.SWIPE_THRESHOLD_VELOCITY) {
-                        if(count != 0)
+                        if (count != 0)
                             previousInstitution();
                         else {
                             institution_switcher.startAnimation(shake);
                             qualification_list.startAnimation(shake);
                         }
                     }
-                } catch (Exception e) {}
+                } catch (Exception e) {
+                }
 
                 return false;
             }
 
-            public boolean onDown(MotionEvent e) {return false;}
+            public boolean onDown(MotionEvent e) {
+                return false;
+            }
         });
 
         gestureListener = new View.OnTouchListener() {
@@ -161,7 +173,7 @@ public class FragmentQualification extends Fragment {
         return mHolderView;
     }
 
-    private void nextInstitution(){
+    private void nextInstitution() {
         count++;
         institution_switcher.setInAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.push_left_in));
         institution_switcher.setOutAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.push_left_out));
@@ -184,8 +196,8 @@ public class FragmentQualification extends Fragment {
     }
 
     /**
-     * @usage new LoadData().execute(new Void[0]);
      * @author Azmeer Raja
+     * @usage new LoadData().execute(new Void[0]);
      */
     private class LoadData extends AsyncTask<Void, Void, String> {
 
@@ -202,7 +214,7 @@ public class FragmentQualification extends Fragment {
         }
 
         protected void onPostExecute(String result) {
-            if(result.equals("true")) {
+            if (result.equals("true")) {
                 MAX_COUNT = mQualificationData.size();
                 institution_switcher.setText(mQualificationData.get(count).getInstitutionName());
                 adapter.setListData(mQualificationData.get(count).getQualificationDescription());

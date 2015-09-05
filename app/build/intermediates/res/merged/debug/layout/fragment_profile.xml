@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-Copyright 2015 Raaja Ar
+Copyright 2015 Azmeer Raja
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ limitations under the License.
     android:layout_height="match_parent">
 
     <com.raja.knowme.widgets.AppTextView
-	    android:id="@+id/profile_header_text"
+        android:id="@+id/profile_header_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -30,18 +30,18 @@ limitations under the License.
         android:text="@string/profile"
         android:textColor="#FF3FB3D6"
         android:textSize="@dimen/header_text_size" />
-    
+
     <TextSwitcher
-		android:id="@+id/profile_subheader_text"
+        android:id="@+id/profile_subheader_text"
         android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/profile_header_text"
         android:layout_margin="10dp"
-		android:ellipsize="marquee"
-		android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
         android:scrollHorizontally="true" />
-        
-    <ScrollView 
+
+    <ScrollView
         android:id="@+id/profile_scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,39 +51,39 @@ limitations under the License.
         android:fillViewport="true"
         android:overScrollMode="never"
         android:scrollbars="none">
-        
-        <LinearLayout 
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            	        
-	        <TextSwitcher
-	        	android:id="@+id/profile_body_text"
-                android:layout_width="match_parent"
-			    android:layout_height="wrap_content"
-				android:ellipsize="marquee"
-				android:marqueeRepeatLimit="marquee_forever"
-				android:scrollHorizontally="true"/>
-	        
-	        <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-				android:background="@drawable/black_horizontal_divider"/>
-				    
-			<View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-			    android:layout_marginBottom="5dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-				android:background="@drawable/white_horizontal_divider"/>
-        
-        </LinearLayout>
-            
-	</ScrollView>
 
-    <include layout="@layout/layout_instructions_layout"/>
-    
+            <TextSwitcher
+                android:id="@+id/profile_body_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/black_horizontal_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_horizontal_divider" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_instructions_layout" />
+
 </RelativeLayout><!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KnowMe/app/src/main/res/layout/fragment_profile.xml -->

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--Copyright 2015 Raaja Ar
+<?xml version="1.0" encoding="utf-8"?><!--Copyright 2015 Azmeer Raja
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -30,8 +30,8 @@ limitations under the License.
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-        <item name="android:windowBackground">@color/app_bg_color</item>     
+        <item name="android:windowBackground">@color/app_bg_color</item>
     </style>
-    
+
     <color name="app_bg_color">#212121</color>
 </resources>

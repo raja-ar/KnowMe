@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--Copyright 2015 Raaja Ar
+<?xml version="1.0" encoding="utf-8"?><!--Copyright 2015 Azmeer Raja
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -13,14 +13,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
-    
+
     <RelativeLayout
         android:id="@+id/instrunstions_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#CC000000"
         android:padding="5dp">
-        
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,20 +29,20 @@ limitations under the License.
             android:contentDescription="@string/navigation_image"
             android:scaleType="centerInside"
             android:src="@drawable/swipe1" />
-        
+
         <com.raja.knowme.widgets.AppTextView
-	        android:id="@+id/instructions_text"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignParentBottom="true"
+            android:id="@+id/instructions_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_marginBottom="10dp"
-	        android:gravity="center_horizontal"
-	        android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
             android:text="@string/navigation_instructions"
             android:textColor="#09afad"
             android:textSize="@dimen/content_text_size"
             android:textStyle="bold" />
-        
-    </RelativeLayout>    
+
+    </RelativeLayout>
 
 </merge><!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KnowMe/app/src/main/res/layout/layout_instructions_layout.xml -->

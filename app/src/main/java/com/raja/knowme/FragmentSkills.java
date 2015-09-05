@@ -1,19 +1,22 @@
-package com.raja.knowme;
 /*
  * Copyright 2015 Azmeer Raja
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *        http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ *
  */
+
+package com.raja.knowme;
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -42,8 +45,8 @@ import java.util.ArrayList;
 
 /**
  * http://www.youtube.com/watch?v=qxxM7X4Zpr8&feature=plcp&context=C3b2e024UDOEgsToPDskIKlaDd4I-hyl4W-2Hs1O7Z
- * @author Azmeer Raja
  *
+ * @author Azmeer Raja
  */
 public class FragmentSkills extends Fragment {
 
@@ -70,7 +73,7 @@ public class FragmentSkills extends Fragment {
     }
 
     private AppTextView addItem(final SkillsDetailsObject data) {
-        final AppTextView mTextView= new AppTextView(getActivity());
+        final AppTextView mTextView = new AppTextView(getActivity());
         LayoutParams mViewParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
         mViewParams.setMargins(0, 5, -5, 0);
         mTextView.setLayoutParams(mViewParams);
@@ -79,16 +82,16 @@ public class FragmentSkills extends Fragment {
         mTextView.setTextColor(Color.WHITE);
         mTextView.setTextSize(20);
         mTextView.setPadding(3, 15, 0, 0);
-    	/*try {
+        /*try {
     		mTextView.setCompoundDrawablesWithIntrinsicBounds(0, 0, mImage, 0);
     	} catch (Exception e) {
     		Log.w(this.getClass().getName(), "Drawable not found for : " + name);
     	}*/
-        if(data.getSkillsLink().length() > 0) {
+        if (data.getSkillsLink().length() > 0) {
             mTextView.setBackgroundResource(R.drawable.button_config);
             mTextView.setOnClickListener(new OnClickListener() {
                 public void onClick(View v) {
-                    if(data.getSkillsLink().trim().length() > 0)
+                    if (data.getSkillsLink().trim().length() > 0)
                         openWebPage(data.getSkillsLink(), mTextView);
                     else {
                         mTextView.startAnimation(shake);
@@ -101,7 +104,6 @@ public class FragmentSkills extends Fragment {
     }
 
     /**
-     *
      * @param pageURL
      * @param selectedView
      */
@@ -115,8 +117,8 @@ public class FragmentSkills extends Fragment {
     }
 
     /**
-     * @usage new LoadData().execute(new Void[0]);
      * @author Azmeer Raja
+     * @usage new LoadData().execute(new Void[0]);
      */
     private class LoadData extends AsyncTask<Void, Void, String> {
 
@@ -133,8 +135,8 @@ public class FragmentSkills extends Fragment {
         }
 
         protected void onPostExecute(String result) {
-            if(result.equals("true")) {
-                for(int count = 0; count < mSkillsData.size(); count++)
+            if (result.equals("true")) {
+                for (int count = 0; count < mSkillsData.size(); count++)
                     mSkillsHolder.addView(addItem(mSkillsData.get(count)));
                 mProgressDialog.dismiss();
             } else

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-Copyright 2015 Raaja Ar
+Copyright 2015 Azmeer Raja
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ limitations under the License.
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-    
+
     <com.raja.knowme.widgets.AppTextView
         android:id="@+id/listview_header_text"
         android:layout_width="match_parent"
@@ -27,27 +27,25 @@ limitations under the License.
         android:gravity="start"
         android:paddingBottom="10dp"
         android:singleLine="true"
-        android:textColor="@android:color/white"
-       />
-    
+        android:textColor="@android:color/white" />
+
     <com.raja.knowme.widgets.AppTextView
         android:id="@+id/listview_content_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="start"
-        android:textColor="@android:color/white"
-         />
-    
-    <View 
+        android:textColor="@android:color/white" />
+
+    <View
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:layout_marginTop="5dp"
-        android:background="@drawable/black_horizontal_divider"/>
-    
-    <View 
+        android:background="@drawable/black_horizontal_divider" />
+
+    <View
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:layout_marginBottom="3dp"
         android:background="@drawable/white_horizontal_divider" />
-	
+
 </LinearLayout><!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KnowMe/app/src/main/res/layout/layout_listview_item.xml -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-Copyright 2015 Raaja Ar
+Copyright 2015 Azmeer Raja
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -16,73 +16,73 @@ limitations under the License.
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-        
-	 <com.raja.knowme.widgets.AppTextView
-	    android:id="@+id/contact_header_text"
-        android:layout_width="wrap_content"
-		 android:layout_height="wrap_content"
-		 android:layout_alignParentEnd="true"
-		 android:layout_alignParentRight="true"
-		 android:ellipsize="marquee"
-        android:gravity="end"
-		 android:paddingTop="2dp"
-        android:singleLine="true"
-		 android:text="@string/contact"
-		 android:textColor="#FF3FB3D6"
-		 android:textSize="@dimen/header_text_size" />
-	 
-	 <com.raja.knowme.widgets.AppTextView
-		android:id="@+id/address_text"
-		 android:layout_width="wrap_content"
-		 android:layout_height="wrap_content"
-		 android:layout_centerInParent="true"
 
-	    android:padding="10dp"
-		 android:textColor="@android:color/white"
-		 android:textSize="@dimen/content_text_size" />
-	 	 
-	<LinearLayout
-		android:id="@+id/contact_footer_layout"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:layout_alignParentEnd="true"
-		android:layout_alignParentRight="true"
-		android:orientation="horizontal"
-
-		android:paddingBottom="5dp"
-		>
-
-
-		<!--<ImageButton
-			android:id="@+id/contact_call_btn"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:background="@android:color/transparent"
-			android:src="@drawable/ic_call"
-			android:contentDescription="@string/call_me"
-			android:layout_marginEnd="25dp"
-			android:layout_marginRight="25dp" />   -->
-		<ImageButton
-			android:id="@+id/contact_fb_btn"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginEnd="25dp"
-			android:layout_marginRight="25dp"
-			android:background="@android:color/transparent"
-			android:contentDescription="@string/call_me"
-			android:src="@drawable/ic_blog" />
-
-		<ImageButton
-        android:id="@+id/contact_mail_btn"
+    <com.raja.knowme.widgets.AppTextView
+        android:id="@+id/contact_header_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-			android:layout_marginEnd="5dp"
-			android:layout_marginRight="5dp"
-        android:background="@android:color/transparent"
-			android:contentDescription="@string/mail_me"
-			android:src="@drawable/ic_mail"
-		/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ellipsize="marquee"
+        android:gravity="end"
+        android:paddingTop="2dp"
+        android:singleLine="true"
+        android:text="@string/contact"
+        android:textColor="#FF3FB3D6"
+        android:textSize="@dimen/header_text_size" />
 
-	</LinearLayout>
+    <com.raja.knowme.widgets.AppTextView
+        android:id="@+id/address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/content_text_size"
+        android:lines="3"
+        android:maxLines="3" />
+
+    <LinearLayout
+        android:id="@+id/contact_footer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+
+        android:paddingBottom="5dp">
+
+
+        <!--<ImageButton
+            android:id="@+id/contact_call_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_call"
+            android:contentDescription="@string/call_me"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp" />   -->
+        <ImageButton
+            android:id="@+id/contact_fb_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/call_me"
+            android:src="@drawable/ic_blog" />
+
+        <ImageButton
+            android:id="@+id/contact_mail_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/mail_me"
+            android:src="@drawable/ic_mail" />
+
+    </LinearLayout>
 </RelativeLayout><!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KnowMe/app/src/main/res/layout/fragment_contact.xml -->

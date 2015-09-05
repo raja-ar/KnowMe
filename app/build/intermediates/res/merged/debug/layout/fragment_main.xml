@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-Copyright 2015 Raaja Ar
+Copyright 2015 Azmeer Raja
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -62,7 +62,7 @@ limitations under the License.
                 android:padding="10dp"
                 android:text="@string/spec"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/mbtn_text_size"/>
+                android:textSize="@dimen/mbtn_text_size" />
 
             <com.raja.knowme.widgets.AppButton
                 android:id="@+id/projects_btn"
