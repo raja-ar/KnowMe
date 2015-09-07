@@ -78,14 +78,14 @@ public class FragmentSpecialization extends Fragment {
 
         if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL) {
-            Toast.makeText(getActivity(), "small", Toast.LENGTH_SHORT).show();
+            //   Toast.makeText(getActivity(), "small", Toast.LENGTH_SHORT).show();
             LayoutParams mViewParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
             mViewParams.setMargins(0, 5, -5, 0);
             mTextView.setLayoutParams(mViewParams);
             mTextView.setText(data.getSpecializationName());
             mTextView.setGravity(Gravity.LEFT);
             mTextView.setTextColor(Color.WHITE);
-            mTextView.setTextSize(16);
+            mTextView.setTextSize(14);
             mTextView.setPadding(3, 15, 0, 0);
         }
 
@@ -93,7 +93,7 @@ public class FragmentSpecialization extends Fragment {
 
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL) {
-            Toast.makeText(getActivity(), "normal", Toast.LENGTH_SHORT).show();
+            //   Toast.makeText(getActivity(), "normal", Toast.LENGTH_SHORT).show();
             LayoutParams mViewParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
             mViewParams.setMargins(0, 5, -5, 0);
             mTextView.setLayoutParams(mViewParams);
@@ -108,7 +108,7 @@ public class FragmentSpecialization extends Fragment {
 
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE) {
-            Toast.makeText(getActivity(), "large", Toast.LENGTH_SHORT).show();
+            //  Toast.makeText(getActivity(), "large", Toast.LENGTH_SHORT).show();
             LayoutParams mViewParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
             mViewParams.setMargins(0, 5, -5, 0);
             mTextView.setLayoutParams(mViewParams);
@@ -124,7 +124,7 @@ public class FragmentSpecialization extends Fragment {
 
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
-            Toast.makeText(getActivity(), "xlarge", Toast.LENGTH_SHORT).show();
+            //  Toast.makeText(getActivity(), "xlarge", Toast.LENGTH_SHORT).show();
             LayoutParams mViewParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
             mViewParams.setMargins(0, 5, -5, 0);
             mTextView.setLayoutParams(mViewParams);
@@ -138,7 +138,7 @@ public class FragmentSpecialization extends Fragment {
         //Undefined Size
 
         else {
-            Toast.makeText(getActivity(), "undefined", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getActivity(), "undefined", Toast.LENGTH_SHORT).show();
             LayoutParams mViewParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
             mViewParams.setMargins(0, 5, -5, 0);
             mTextView.setLayoutParams(mViewParams);

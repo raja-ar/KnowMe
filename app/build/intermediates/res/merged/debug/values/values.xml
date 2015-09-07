@@ -5,16 +5,11 @@
     <color name="app_bg_color">#212121</color>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KnowMe/app/src/main/res/values/dimen.xml -->
     <eat-comment/>
-    <dimen name="content_text_size">25sp</dimen>
-    <dimen name="header_text_size">50sp</dimen>
-    <dimen name="mbtn_text_size">22sp</dimen>
-    <dimen name="subheader_text_size">30sp</dimen>
-    <dimen name="username_text_size">25sp</dimen>
-    <dimen name="xlcontent_text_size">35sp</dimen>
-    <dimen name="xlheader_text_size">60sp</dimen>
-    <dimen name="xlmbtn_text_size">32sp</dimen>
-    <dimen name="xlsubheader_text_size">40sp</dimen>
-    <dimen name="xlusername_text_size">35sp</dimen>
+    <dimen name="content_text_size">35sp</dimen>
+    <dimen name="header_text_size">60sp</dimen>
+    <dimen name="mbtn_text_size">32sp</dimen>
+    <dimen name="subheader_text_size">40sp</dimen>
+    <dimen name="username_text_size">35sp</dimen>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KnowMe/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="achi">Projects</string>
@@ -25,6 +20,7 @@
     <string name="error_parsing">Error occurred while loading data!</string>
     <string name="error_redirection_link">Link not specified!</string>
     <string name="exp">Experience</string>
+    <string name="fb">Face Me</string>
     <string name="loading">Loading</string>
     <string name="mail_me">Mail Me</string>
     <string name="navigation_image">Navigation image.</string>

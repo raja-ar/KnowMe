@@ -14,18 +14,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <resources>
-    <dimen name="xlheader_text_size">60sp</dimen>
-    <dimen name="xlusername_text_size">35sp</dimen>
-    <dimen name="xlsubheader_text_size">40sp</dimen>
-    <dimen name="xlcontent_text_size">35sp</dimen>
-    <dimen name="xlmbtn_text_size">32sp</dimen>
-    <dimen name="header_text_size">50sp</dimen>
-    <dimen name="username_text_size">25sp</dimen>
-    <dimen name="subheader_text_size">30sp</dimen>
-    <dimen name="content_text_size">25sp</dimen>
-    <dimen name="mbtn_text_size">22sp</dimen>
 
-
-
+    <dimen name="header_text_size">60sp</dimen>
+    <dimen name="username_text_size">35sp</dimen>
+    <dimen name="subheader_text_size">40sp</dimen>
+    <dimen name="content_text_size">35sp</dimen>
+    <dimen name="mbtn_text_size">32sp</dimen>
 
 </resources>

@@ -21,19 +21,14 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int app_bg_color=0x7f070000;
+        public static final int app_bg_color=0x7f080000;
     }
     public static final class dimen {
-        public static final int content_text_size=0x7f080000;
-        public static final int header_text_size=0x7f080001;
-        public static final int mbtn_text_size=0x7f080002;
-        public static final int subheader_text_size=0x7f080003;
-        public static final int username_text_size=0x7f080004;
-        public static final int xlcontent_text_size=0x7f080005;
-        public static final int xlheader_text_size=0x7f080006;
-        public static final int xlmbtn_text_size=0x7f080007;
-        public static final int xlsubheader_text_size=0x7f080008;
-        public static final int xlusername_text_size=0x7f080009;
+        public static final int content_text_size=0x7f060000;
+        public static final int header_text_size=0x7f060001;
+        public static final int mbtn_text_size=0x7f060002;
+        public static final int subheader_text_size=0x7f060003;
+        public static final int username_text_size=0x7f060004;
     }
     public static final class drawable {
         public static final int black_divider=0x7f020000;
@@ -138,17 +133,18 @@ public final class R {
         public static final int error_parsing=0x7f090005;
         public static final int error_redirection_link=0x7f090006;
         public static final int exp=0x7f090007;
-        public static final int loading=0x7f090008;
-        public static final int mail_me=0x7f090009;
-        public static final int navigation_image=0x7f09000a;
-        public static final int navigation_instructions=0x7f09000b;
-        public static final int profile=0x7f09000c;
-        public static final int qual=0x7f09000d;
-        public static final int ref=0x7f09000e;
-        public static final int send_mail=0x7f09000f;
-        public static final int skills=0x7f090010;
-        public static final int spec=0x7f090011;
-        public static final int testi=0x7f090012;
+        public static final int fb=0x7f090008;
+        public static final int loading=0x7f090009;
+        public static final int mail_me=0x7f09000a;
+        public static final int navigation_image=0x7f09000b;
+        public static final int navigation_instructions=0x7f09000c;
+        public static final int profile=0x7f09000d;
+        public static final int qual=0x7f09000e;
+        public static final int ref=0x7f09000f;
+        public static final int send_mail=0x7f090010;
+        public static final int skills=0x7f090011;
+        public static final int spec=0x7f090012;
+        public static final int testi=0x7f090013;
     }
     public static final class style {
         /**  API 10 theme customizations can go here. 
@@ -161,7 +157,7 @@ public final class R {
 
         
          */
-        public static final int AppBaseTheme=0x7f060000;
-        public static final int AppTheme=0x7f060001;
+        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppTheme=0x7f070001;
     }
 }

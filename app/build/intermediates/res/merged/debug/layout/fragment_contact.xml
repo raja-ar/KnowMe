@@ -71,7 +71,7 @@ limitations under the License.
             android:layout_marginEnd="25dp"
             android:layout_marginRight="25dp"
             android:background="@android:color/transparent"
-            android:contentDescription="@string/call_me"
+            android:contentDescription="@string/fb"
             android:src="@drawable/fb" />
 
         <ImageButton

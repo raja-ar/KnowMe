@@ -103,7 +103,7 @@ public class FragmentProjects extends Fragment {
 
         if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL) {
-            Toast.makeText(getActivity(), "small", Toast.LENGTH_SHORT).show();
+            //  Toast.makeText(getActivity(), "small", Toast.LENGTH_SHORT).show();
             comapny_switcher.setFactory(new ViewSwitcher.ViewFactory() {
                 public View makeView() {
                     /** Set up the custom auto scrolling text view class for lengthy album names */
@@ -123,7 +123,7 @@ public class FragmentProjects extends Fragment {
 
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL) {
-            Toast.makeText(getActivity(), "normal", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(getActivity(), "normal", Toast.LENGTH_SHORT).show();
             comapny_switcher.setFactory(new ViewSwitcher.ViewFactory() {
                 public View makeView() {
                     /** Set up the custom auto scrolling text view class for lengthy album names */
@@ -144,7 +144,7 @@ public class FragmentProjects extends Fragment {
 
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE) {
-            Toast.makeText(getActivity(), "large", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(getActivity(), "large", Toast.LENGTH_SHORT).show();
             comapny_switcher.setFactory(new ViewSwitcher.ViewFactory() {
                 public View makeView() {
                     /** Set up the custom auto scrolling text view class for lengthy album names */
@@ -166,7 +166,7 @@ public class FragmentProjects extends Fragment {
 
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
-            Toast.makeText(getActivity(), "xlarge", Toast.LENGTH_SHORT).show();
+            //  Toast.makeText(getActivity(), "xlarge", Toast.LENGTH_SHORT).show();
             comapny_switcher.setFactory(new ViewSwitcher.ViewFactory() {
                 public View makeView() {
                     /** Set up the custom auto scrolling text view class for lengthy album names */
@@ -186,7 +186,7 @@ public class FragmentProjects extends Fragment {
         //Undefined Size
 
         else {
-            Toast.makeText(getActivity(), "undefined", Toast.LENGTH_SHORT).show();
+            //  Toast.makeText(getActivity(), "undefined", Toast.LENGTH_SHORT).show();
             comapny_switcher.setFactory(new ViewSwitcher.ViewFactory() {
                 public View makeView() {
                     /** Set up the custom auto scrolling text view class for lengthy album names */
