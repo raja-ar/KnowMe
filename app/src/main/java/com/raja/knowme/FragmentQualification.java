@@ -18,6 +18,7 @@
 package com.raja.knowme;
 
 import android.app.ProgressDialog;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -96,6 +97,50 @@ public class FragmentQualification extends Fragment {
                 instruction_btn.setVisibility(RelativeLayout.GONE);
             }
         });
+
+        /*                 Multiple Screen Size Condition             */
+
+        // Small Size
+
+        if ((getContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL) {
+            Toast.makeText(getActivity(), "small", Toast.LENGTH_SHORT).show();
+        }
+
+        //Normal Size
+
+        else if ((getContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL) {
+            Toast.makeText(getActivity(), "normal", Toast.LENGTH_SHORT).show();
+
+        }
+
+        // Large Size
+
+        else if ((getContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE) {
+            Toast.makeText(getActivity(), "large", Toast.LENGTH_SHORT).show();
+
+
+        }
+
+        //X-large Size
+
+        else if ((getContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
+            Toast.makeText(getActivity(), "xlarge", Toast.LENGTH_SHORT).show();
+
+        }
+
+        //Undefined Size
+
+        else {
+            Toast.makeText(getActivity(), "undefined", Toast.LENGTH_SHORT).show();
+
+
+        }
+
+
 
         institution_switcher.setFactory(new ViewFactory() {
             public View makeView() {

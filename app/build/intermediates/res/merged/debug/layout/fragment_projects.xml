@@ -53,7 +53,7 @@ limitations under the License.
         android:divider="@android:color/transparent"
         android:fadingEdge="none"
         android:overScrollMode="never"
-        android:scrollbars="none" />
+        android:scrollbars="none"/>
 
     <include layout="@layout/layout_instructions_layout" />
 
