@@ -6,21 +6,21 @@
         jumboMode="false"
         revision="23.0.0"
         sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\release\classes-5c8ca3c0a6fcae4e650694ac993ea0f0fd09210b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\release\internal_impl-23.0.0-a9aa735b04dd126d3bf0687dfbdc1989bbdfc858.jar" />
+        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\debug\classes-5c8ca3c0a6fcae4e650694ac993ea0f0fd09210b.jar" />
     </item>
     <item
         jar="C:\Users\Raaja\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\release\support-annotations-23.0.0-1a44decb46c450ddae125a33c63727968fccdf47.jar" />
+        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-1a44decb46c450ddae125a33c63727968fccdf47.jar" />
+    </item>
+    <item
+        jar="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-a9aa735b04dd126d3bf0687dfbdc1989bbdfc858.jar" />
     </item>
 
 </items>

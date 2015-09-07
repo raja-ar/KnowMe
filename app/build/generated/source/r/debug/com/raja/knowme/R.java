@@ -29,23 +29,30 @@ public final class R {
         public static final int mbtn_text_size=0x7f080002;
         public static final int subheader_text_size=0x7f080003;
         public static final int username_text_size=0x7f080004;
+        public static final int xlcontent_text_size=0x7f080005;
+        public static final int xlheader_text_size=0x7f080006;
+        public static final int xlmbtn_text_size=0x7f080007;
+        public static final int xlsubheader_text_size=0x7f080008;
+        public static final int xlusername_text_size=0x7f080009;
     }
     public static final class drawable {
         public static final int black_divider=0x7f020000;
         public static final int black_horizontal_divider=0x7f020001;
         public static final int blue_shape=0x7f020002;
         public static final int button_config=0x7f020003;
-        public static final int ic_blog=0x7f020004;
-        public static final int ic_call=0x7f020005;
-        public static final int ic_camera=0x7f020006;
-        public static final int ic_demo_swipe=0x7f020007;
-        public static final int ic_mail=0x7f020008;
-        public static final int ic_play=0x7f020009;
-        public static final int swipe1=0x7f02000a;
-        public static final int transparent_shape=0x7f02000b;
-        public static final int vertical_divider=0x7f02000c;
-        public static final int white_divider=0x7f02000d;
-        public static final int white_horizontal_divider=0x7f02000e;
+        public static final int fb=0x7f020004;
+        public static final int ic_blog=0x7f020005;
+        public static final int ic_call=0x7f020006;
+        public static final int ic_camera=0x7f020007;
+        public static final int ic_demo_swipe=0x7f020008;
+        public static final int ic_mail=0x7f020009;
+        public static final int ic_play=0x7f02000a;
+        public static final int mb=0x7f02000b;
+        public static final int swipe1=0x7f02000c;
+        public static final int transparent_shape=0x7f02000d;
+        public static final int vertical_divider=0x7f02000e;
+        public static final int white_divider=0x7f02000f;
+        public static final int white_horizontal_divider=0x7f020010;
     }
     public static final class id {
         public static final int address_text=0x7f0a0007;

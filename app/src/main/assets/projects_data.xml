@@ -46,14 +46,14 @@
     <!-- Skills detials -->
     <skills>
 
-        <skills-details name="Programming Languages : C, C++,Html,Dhtml,Java"></skills-details>
+        <skills-details name="Programming Languages : C, C++,Html,Dhtml,Java"/>
         <skills-details
-            name="Operating System : Windows XP/Vista/7/8,Android and Linux"></skills-details>
+            name="Operating System : Windows XP/Vista/7/8,Android and Linux"/>
         <skills-details
-            name="Design tools : Adobe Photoshop, Adobe After Effects, Adobe Premier, Adobe Soundbooth,  Adobe Flash,  Adobe Indesign,  Adobe Dreamweaver, Adobe illustrator, Coreldraw."></skills-details>
+            name="Design tools : Adobe Photoshop, Adobe After Effects, Adobe Premier, Adobe Soundbooth,  Adobe Flash,  Adobe Indesign,  Adobe Dreamweaver, Adobe illustrator, Coreldraw."/>
         <skills-details
-            name="Others : Android Studio ,Unity, Phonegap, Ms Office, Tally."></skills-details>
-        <skills-details name="Yet To Update"></skills-details>
+            name="Others : Android Studio ,Unity, Phonegap, Ms Office, Tally."/>
+
 
 
     </skills>
@@ -61,13 +61,11 @@
     <!-- Specialization detials -->
     <specialization>
 
-        <specialization-details name="Android App Development"></specialization-details>
-        <specialization-details name=" Web Designing"></specialization-details>
-        <specialization-details name=" Audio and Video Editing"></specialization-details>
-        <specialization-details name="Graphic/Image Designing"></specialization-details>
-        <specialization-details
-            name=" Hardware and Software Troubleshooting"></specialization-details>
-        <specialization-details name="Yet To Update"></specialization-details>
+        <specialization-details name="Android App Development"/>
+        <specialization-details name=" Web Designing"/>
+        <specialization-details name=" Audio and Video Editing"/>
+        <specialization-details name="Graphic/Image Designing"/>
+        <specialization-details  name=" Hardware and Software Troubleshooting"/>
 
     </specialization>
 
@@ -89,12 +87,10 @@
     <!-- Qualification detials -->
     <qualification>
         <institution name="Hindusthan Institute of Technology">
-            <qualification-details
-                name="Bachelor of Technology in Information Technology,(2014)"></qualification-details>
+            <qualification-details name="Bachelor of Technology in Information Technology,(2014)"/>
         </institution>
         <institution name="Apollo University">
-            <qualification-details
-                name="Master In Multimedia Designing and Editing"></qualification-details>
+            <qualification-details name="Master In Multimedia Designing and Editing"/>
         </institution>
         <institution name="Veveaham Higher Secondary School">
             <qualification-details name="XII, Higher Secondary,(2010)">
@@ -111,7 +107,7 @@
     <!-- Work Exp detials -->
     <work-exp>
         <work-detial name="FreeLancer" period="March 2015 – Present">
-            UI Designer and Jr.Developer,Android Application Development
+            Was involved as a freelancer for developing Android Application and graphic designing .
         </work-detial>
         <work-detial name="Hitech Computers" period="August 2014 – March 2015">
             UI Designer,Android Application Development
@@ -169,75 +165,5 @@
         <mail>azmeerraaja@live.com</mail>
         <mail>developer.raaja@gmail.com</mail>
     </contact>
-    <!--
-     OBJECTIVE
 
-     Work hard, Play smart, Use my skills to improve myself and the Company where I work(Think, Aim and Achieve higher)
-
-     EDUCATIONAL QUALIFIACTIONS
-
-     Bachelor of Technology in Information Technology(2014)(pursuing).
-     Hindusthan Institute of  Technology , Coimbatore.
-
-     XII, Higher Secondary,(2010)
-     Veveaham  Higher Secondary School, Dharapuram.
-     Percentage: 85%
-
-     X, State Board, (2008)
-     Veveaham  Higher Secondary School, Dharapuram.
-     Percentage: 69%
-
-     TECHNICAL SKILLS
-
-     Programming Languages	:  C, C++,Html,Dhtml,(Learning Java)
-     Operating System		:  Windows XP/Vista/7/8,Android&Open source
-     Software tools          : Eclipse IDE, Android Studio IDE, Ms Office, Adobe Photoshop, Adobe After Effects, Adobe Premier, Adobe Soundbooth,  Adobe Flash,  Adobe Indesign,  Adobe Dreamweaver, Adobe illustrator, Coreldraw, Tally.
-
-     AREAS OF INTEREST
-     Android App Development
-     Web Designing,
-     Audio & Video Editing,
-     Image/Poster Designing,
-     Web Developing.
-     Hardware and Software Troubleshooting (Windows 7)
-
-     CO-CURRICULAR ACTIVITIES
-
-     Presented a paper on “USB 3.0” in”ZEIGEN’11”-KLN College of Engineering , Madurai.
-     Participated in One day Workshop on “MAYA”organized by Adoro Multimedia”WORLD MULTIMEDIA ASSOCIATION”at Coimbatore Institute of Technology.
-     Presented a paper on “BIOID’s- A Security Guaranteed Systems” in Vellamal College of Engineering, Madurai.
-     Participated in One day Workshop on”Cyber Security & Malware Analysis”
-     In typewriting I have undergone a exam and have secured First class with distinction.
-
-     EXPERIENCE
-     The Chennai Silks Corporate,Tirupur
-     Dept: Android App Development
-     Role: UI Designer
-     March 2015-Present
-     EXTRA CURRICULAR ACTIVITIES
-
-         Have participated in NSS Campagains.
-
-     CERTIFICATIONS
-
-     Have Certified in “Certificate in Computer Application”
-     Have Certified in “Diploma in Computer Application”
-     Have Certified in “CCNA Exploration-CISCO Certified”
-     Have Certified in “Master In Multimedia Designing &Editing”
-
-     PROJECT
-
-     Done a Mini Project on “ONLINE LIBRARY MANAGEMENT”(Individual Project)
-     Final Year Project Title-“ MOBILITY MANAGEMENT APPROACHES FOR MOBILE IP NETWORKS: PERFORMANCE COMPARISON AND USE RECOMMENDATIONS”
-     -Duration: 2-3 Months.
-     -Role: Coding ,Designing and Documentation.
-     -Description:  Sending Packages to the various mobile ip's to compare other networking mobilities performance .
-
-
-     REFERENCE
-     Dr. S.J. Narmadha M.Tech., Ph.D.
-     Professor And Head of The Department
-     Department of Information Technology
-     Hindustan Institute of Technology
-     Coimbatore.           -->
 </knowme>

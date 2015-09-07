@@ -18,6 +18,7 @@
 package com.raja.knowme;
 
 import android.app.ProgressDialog;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -92,31 +93,145 @@ public class FragmentProfile extends Fragment {
                 mInstructionBtn.setVisibility(RelativeLayout.GONE);
             }
         });
+/*                 Multiple Screen Size Condition             */
+        if ((getContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL)
+        {
+            Toast.makeText(getActivity(), "small", Toast.LENGTH_SHORT).show();
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(10 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
 
-        mHeaderSwitcher.setFactory(new ViewFactory() {
-            public View makeView() {
-                /** Set up the custom auto scrolling text view class for lengthy album names */
-                AppTextView textSwitcher_text = new AppTextView(getActivity());
-                textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
-                textSwitcher_text.setTextSize(20 * functions.getScreenDPI());
-                textSwitcher_text.setSingleLine(true);
-                textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
-                textSwitcher_text.setMarqueeRepeatLimit(-1);
-                textSwitcher_text.setHorizontallyScrolling(true);
-                return textSwitcher_text;
-            }
-        });
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(5 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
+        }else if ((getContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL)
+        {
+            Toast.makeText(getActivity(),"normal" , Toast.LENGTH_SHORT).show();
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(15 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
 
-        mBodySwitcher.setFactory(new ViewFactory() {
-            public View makeView() {
-                /** Set up the custom auto scrolling text view class for lengthy album names */
-                AppTextView textSwitcher_text = new AppTextView(getActivity());
-                textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
-                textSwitcher_text.setTextSize(12 * functions.getScreenDPI());
-                return textSwitcher_text;
-            }
-        });
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(10 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
+        }else  if ((getContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE)
+        {
+            Toast.makeText(getActivity(),"large" , Toast.LENGTH_SHORT).show();
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(32 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
 
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(18 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
+
+        }else if ((getContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE)
+        {
+            Toast.makeText(getActivity(),"xlarge" , Toast.LENGTH_SHORT).show();
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(40 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
+
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(20 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
+
+        }else
+        {
+            Toast.makeText(getActivity(),"undefined" , Toast.LENGTH_SHORT).show();
+
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(32 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
+
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(20 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
+        }
         mProgressDialog.show();
         new LoadData().execute();
 

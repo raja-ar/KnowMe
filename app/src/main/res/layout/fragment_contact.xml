@@ -72,7 +72,7 @@ limitations under the License.
             android:layout_marginRight="25dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/call_me"
-            android:src="@drawable/ic_blog" />
+            android:src="@drawable/fb" />
 
         <ImageButton
             android:id="@+id/contact_mail_btn"
@@ -82,7 +82,7 @@ limitations under the License.
             android:layout_marginRight="5dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/mail_me"
-            android:src="@drawable/ic_mail" />
+            android:src="@drawable/mb" />
 
     </LinearLayout>
 </RelativeLayout>
