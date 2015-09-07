@@ -35,7 +35,6 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
 import android.widget.Toast;
 
 import com.raja.knowme.variables.KnowMeDataObject;
@@ -83,6 +82,14 @@ public class FragmentSkills extends Fragment {
         if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL) {
             Toast.makeText(getActivity(), "small", Toast.LENGTH_SHORT).show();
+            LinearLayout.LayoutParams mViewParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            mViewParams.setMargins(0, 5, -5, 0);
+            mTextView.setLayoutParams(mViewParams);
+            mTextView.setText(data.getSkillsName());
+            mTextView.setGravity(Gravity.LEFT);
+            mTextView.setTextColor(Color.WHITE);
+            mTextView.setTextSize(16);
+            mTextView.setPadding(3, 15, 0, 0);
         }
 
         //Normal Size
@@ -90,6 +97,14 @@ public class FragmentSkills extends Fragment {
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL) {
             Toast.makeText(getActivity(), "normal", Toast.LENGTH_SHORT).show();
+            LinearLayout.LayoutParams mViewParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            mViewParams.setMargins(0, 5, -5, 0);
+            mTextView.setLayoutParams(mViewParams);
+            mTextView.setText(data.getSkillsName());
+            mTextView.setGravity(Gravity.LEFT);
+            mTextView.setTextColor(Color.WHITE);
+            mTextView.setTextSize(16);
+            mTextView.setPadding(3, 15, 0, 0);
 
         }
 
@@ -98,6 +113,14 @@ public class FragmentSkills extends Fragment {
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE) {
             Toast.makeText(getActivity(), "large", Toast.LENGTH_SHORT).show();
+            LinearLayout.LayoutParams mViewParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            mViewParams.setMargins(0, 5, -5, 0);
+            mTextView.setLayoutParams(mViewParams);
+            mTextView.setText(data.getSkillsName());
+            mTextView.setGravity(Gravity.LEFT);
+            mTextView.setTextColor(Color.WHITE);
+            mTextView.setTextSize(20);
+            mTextView.setPadding(3, 15, 0, 0);
 
 
         }
@@ -107,6 +130,14 @@ public class FragmentSkills extends Fragment {
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
             Toast.makeText(getActivity(), "xlarge", Toast.LENGTH_SHORT).show();
+            LinearLayout.LayoutParams mViewParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            mViewParams.setMargins(0, 5, -5, 0);
+            mTextView.setLayoutParams(mViewParams);
+            mTextView.setText(data.getSkillsName());
+            mTextView.setGravity(Gravity.LEFT);
+            mTextView.setTextColor(Color.WHITE);
+            mTextView.setTextSize(24);
+            mTextView.setPadding(3, 15, 0, 0);
 
         }
 
@@ -114,18 +145,19 @@ public class FragmentSkills extends Fragment {
 
         else {
             Toast.makeText(getActivity(), "undefined", Toast.LENGTH_SHORT).show();
+            LinearLayout.LayoutParams mViewParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            mViewParams.setMargins(0, 5, -5, 0);
+            mTextView.setLayoutParams(mViewParams);
+            mTextView.setText(data.getSkillsName());
+            mTextView.setGravity(Gravity.LEFT);
+            mTextView.setTextColor(Color.WHITE);
+            mTextView.setTextSize(20);
+            mTextView.setPadding(3, 15, 0, 0);
 
 
         }
 
-        LayoutParams mViewParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-        mViewParams.setMargins(0, 5, -5, 0);
-        mTextView.setLayoutParams(mViewParams);
-        mTextView.setText(data.getSkillsName());
-        mTextView.setGravity(Gravity.LEFT);
-        mTextView.setTextColor(Color.WHITE);
-        mTextView.setTextSize(20);
-        mTextView.setPadding(3, 15, 0, 0);
+
         /*try {
     		mTextView.setCompoundDrawablesWithIntrinsicBounds(0, 0, mImage, 0);
     	} catch (Exception e) {

@@ -100,6 +100,29 @@ public class FragmentTestimonials extends Fragment {
         if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL) {
             Toast.makeText(getActivity(), "small", Toast.LENGTH_SHORT).show();
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(24 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
+
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(6 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
         }
 
         //Normal Size
@@ -107,7 +130,29 @@ public class FragmentTestimonials extends Fragment {
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL) {
             Toast.makeText(getActivity(), "normal", Toast.LENGTH_SHORT).show();
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(14 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
 
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(9 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
         }
 
         // Large Size
@@ -116,7 +161,29 @@ public class FragmentTestimonials extends Fragment {
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE) {
             Toast.makeText(getActivity(), "large", Toast.LENGTH_SHORT).show();
 
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(32 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
 
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(18 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
         }
 
         //X-large Size
@@ -124,40 +191,62 @@ public class FragmentTestimonials extends Fragment {
         else if ((getContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
             Toast.makeText(getActivity(), "xlarge", Toast.LENGTH_SHORT).show();
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(48 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
 
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(24 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
         }
 
         //Undefined Size
 
         else {
             Toast.makeText(getActivity(), "undefined", Toast.LENGTH_SHORT).show();
+            mHeaderSwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
+                    textSwitcher_text.setTextSize(20 * functions.getScreenDPI());
+                    textSwitcher_text.setSingleLine(true);
+                    textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
+                    textSwitcher_text.setMarqueeRepeatLimit(-1);
+                    textSwitcher_text.setHorizontallyScrolling(true);
+                    return textSwitcher_text;
+                }
+            });
 
+            mBodySwitcher.setFactory(new ViewFactory() {
+                public View makeView() {
+                    /** Set up the custom auto scrolling text view class for lengthy album names */
+                    AppTextView textSwitcher_text = new AppTextView(getActivity());
+                    textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
+                    textSwitcher_text.setTextSize(12 * functions.getScreenDPI());
+                    return textSwitcher_text;
+                }
+            });
 
         }
 
-        mHeaderSwitcher.setFactory(new ViewFactory() {
-            public View makeView() {
-                /** Set up the custom auto scrolling text view class for lengthy album names */
-                AppTextView textSwitcher_text = new AppTextView(getActivity());
-                textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
-                textSwitcher_text.setTextSize(20 * functions.getScreenDPI());
-                textSwitcher_text.setSingleLine(true);
-                textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
-                textSwitcher_text.setMarqueeRepeatLimit(-1);
-                textSwitcher_text.setHorizontallyScrolling(true);
-                return textSwitcher_text;
-            }
-        });
 
-        mBodySwitcher.setFactory(new ViewFactory() {
-            public View makeView() {
-                /** Set up the custom auto scrolling text view class for lengthy album names */
-                AppTextView textSwitcher_text = new AppTextView(getActivity());
-                textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
-                textSwitcher_text.setTextSize(12 * functions.getScreenDPI());
-                return textSwitcher_text;
-            }
-        });
 
         mProgressDialog.show();
         new LoadData().execute();

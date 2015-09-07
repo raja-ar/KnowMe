@@ -107,7 +107,7 @@ public class FragmentProfile extends Fragment {
                     /** Set up the custom auto scrolling text view class for lengthy album names */
                     AppTextView textSwitcher_text = new AppTextView(getActivity());
                     textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
-                    textSwitcher_text.setTextSize(16 * functions.getScreenDPI());
+                    textSwitcher_text.setTextSize(24 * functions.getScreenDPI());
                     textSwitcher_text.setSingleLine(true);
                     textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
                     textSwitcher_text.setMarqueeRepeatLimit(-1);
@@ -121,7 +121,7 @@ public class FragmentProfile extends Fragment {
                     /** Set up the custom auto scrolling text view class for lengthy album names */
                     AppTextView textSwitcher_text = new AppTextView(getActivity());
                     textSwitcher_text.setTextColor(Color.argb(225, 225, 225, 225));
-                    textSwitcher_text.setTextSize(8 * functions.getScreenDPI());
+                    textSwitcher_text.setTextSize(6 * functions.getScreenDPI());
                     return textSwitcher_text;
                 }
             });
@@ -138,7 +138,7 @@ public class FragmentProfile extends Fragment {
                     /** Set up the custom auto scrolling text view class for lengthy album names */
                     AppTextView textSwitcher_text = new AppTextView(getActivity());
                     textSwitcher_text.setTextColor(Color.argb(225, 245, 242, 11));
-                    textSwitcher_text.setTextSize(18 * functions.getScreenDPI());
+                    textSwitcher_text.setTextSize(14 * functions.getScreenDPI());
                     textSwitcher_text.setSingleLine(true);
                     textSwitcher_text.setEllipsize(TruncateAt.MARQUEE);
                     textSwitcher_text.setMarqueeRepeatLimit(-1);
