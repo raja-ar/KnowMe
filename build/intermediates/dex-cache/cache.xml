@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jar="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.0"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\debug\classes-5c8ca3c0a6fcae4e650694ac993ea0f0fd09210b.jar" />
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\release\classes-0c68c700642d8c1f41074abc1b8e1b0dd47c3055.jar" />
     </item>
     <item
-        jar="C:\Users\Raaja\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jar="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
         jumboMode="false"
-        revision="23.0.0"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-1a44decb46c450ddae125a33c63727968fccdf47.jar" />
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\release\internal_impl-23.0.1-cd2414312c58da6918e9f986c0dca55a1b3eeeb9.jar" />
     </item>
     <item
-        jar="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jar="C:\Users\Raaja\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
         jumboMode="false"
-        revision="23.0.0"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-a9aa735b04dd126d3bf0687dfbdc1989bbdfc858.jar" />
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Raaja\AndroidStudioProjects\KnowMe\app\build\intermediates\pre-dexed\release\support-annotations-23.0.1-3e47fe5922dac79b20927ac9a1f0ed978718a58c.jar" />
     </item>
 
 </items>

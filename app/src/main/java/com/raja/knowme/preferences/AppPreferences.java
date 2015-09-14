@@ -16,79 +16,89 @@
  */
 
 package com.raja.knowme.preferences;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 
 public class AppPreferences {
-	
-	private static SharedPreferences mPrefs;
-	private Context context;
 
-	public AppPreferences(Context _context){
-		this.context = _context;
-		mPrefs = context.getSharedPreferences("MyKnowMeAppPrefs", 0); //0 = mode private. only this app can read these preferences
-	}
+    private static SharedPreferences mPrefs;
+    private Context context;
 
-	//Profile runned
-	public void setProfileRunned() {
-		SharedPreferences.Editor edit = mPrefs.edit();
-		edit.putBoolean("MyKnowMeProfileFirstRun", false);
-		edit.commit();
-	}
-	//Project runned
-	public void setProjectsRunned() {
-		SharedPreferences.Editor edit = mPrefs.edit();
-		edit.putBoolean("MyKnowMeProjectsFirstRun", false);
-		edit.commit();
-	}
+    public AppPreferences(Context _context) {
+        this.context = _context;
+        mPrefs = context.getSharedPreferences("MyKnowMeAppPrefs", 0); //0 = mode private. only this app can read these preferences
+    }
 
-	//Qualification runned
-	public void setQualificationRunned() {
-		SharedPreferences.Editor edit = mPrefs.edit();
-		edit.putBoolean("MyKnowMeQualificationFirstRun", false);
-		edit.commit();
-	}
-	//Work Experience runned
-	public void setWorkRunned() {
-		SharedPreferences.Editor edit = mPrefs.edit();
-		edit.putBoolean("MyKnowMeWorkFirstRun", false);
-		edit.commit();
-	}
-	//References runned
-	public void setReferencesRunned() {
-		SharedPreferences.Editor edit = mPrefs.edit();
-		edit.putBoolean("MyKnowMeReferencesFirstRun", false);
-		edit.commit();
-	}
-	//Testimonials runned
-	public void setTestimonialsRunned() {
-		SharedPreferences.Editor edit = mPrefs.edit();
-		edit.putBoolean("MyKnowMeTestimonialsFirstRun", false);
-		edit.commit();
-	}
+    //Profile runned
+    public void setProfileRunned() {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putBoolean("MyKnowMeProfileFirstRun", false);
+        edit.commit();
+    }
 
-	//Profile First run
-	public boolean getProfileFirstRun() {
-		return mPrefs.getBoolean("MyKnowMeProfileFirstRun", true);
-	}
-	//Project First run
-	public boolean getProjectsFirstRun() {
-		return mPrefs.getBoolean("MyKnowMeProjectsFirstRun", true);
-	}
-	//Qualification First Run
-	public boolean getQualificationFirstRun() {
-		return mPrefs.getBoolean("MyKnowMeQualificationFirstRun", true);
-	}
-	//work experience first run
-	public boolean getWorkFirstRun() {
-		return mPrefs.getBoolean("MyKnowMeWorkFirstRun", true);
-	}
-	//References First run
-	public boolean getReferencesFirstRun() {
-		return mPrefs.getBoolean("MyKnowMeReferencesFirstRun", true);
-	}
-	//Testimonials First run
-	public boolean getTestimonialsFirstRun() {
-		return mPrefs.getBoolean("MyKnowMeTestimonialsFirstRun", true);
-	}
+    //Project runned
+    public void setProjectsRunned() {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putBoolean("MyKnowMeProjectsFirstRun", false);
+        edit.commit();
+    }
+
+    //Qualification runned
+    public void setQualificationRunned() {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putBoolean("MyKnowMeQualificationFirstRun", false);
+        edit.commit();
+    }
+
+    //Work Experience runned
+    public void setWorkRunned() {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putBoolean("MyKnowMeWorkFirstRun", false);
+        edit.commit();
+    }
+
+    //References runned
+    public void setReferencesRunned() {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putBoolean("MyKnowMeReferencesFirstRun", false);
+        edit.commit();
+    }
+
+    //Testimonials runned
+    public void setTestimonialsRunned() {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putBoolean("MyKnowMeTestimonialsFirstRun", false);
+        edit.commit();
+    }
+
+    //Profile First run
+    public boolean getProfileFirstRun() {
+        return mPrefs.getBoolean("MyKnowMeProfileFirstRun", true);
+    }
+
+    //Project First run
+    public boolean getProjectsFirstRun() {
+        return mPrefs.getBoolean("MyKnowMeProjectsFirstRun", true);
+    }
+
+    //Qualification First Run
+    public boolean getQualificationFirstRun() {
+        return mPrefs.getBoolean("MyKnowMeQualificationFirstRun", true);
+    }
+
+    //work experience first run
+    public boolean getWorkFirstRun() {
+        return mPrefs.getBoolean("MyKnowMeWorkFirstRun", true);
+    }
+
+    //References First run
+    public boolean getReferencesFirstRun() {
+        return mPrefs.getBoolean("MyKnowMeReferencesFirstRun", true);
+    }
+
+    //Testimonials First run
+    public boolean getTestimonialsFirstRun() {
+        return mPrefs.getBoolean("MyKnowMeTestimonialsFirstRun", true);
+    }
 }

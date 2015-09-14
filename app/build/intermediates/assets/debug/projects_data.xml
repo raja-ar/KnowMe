@@ -80,6 +80,13 @@
                 Know Me , A simple,elegant App just to show Printed-“Resumes can’t really weigh how
                 good a programmer you are,” Ravisankar-Founder of HackerRank.
             </projects-details>
+            <projects-details name="King Compass">
+                KingCompass , a simple compass with basic features.
+            </projects-details>
+            <projects-details name="TronAr">
+                TronAr,a 3D lightbike racing game similar to the one Shown in the Movie 'Tron'.
+                TronAr is based on the open source glTRON, a 3D lightbike racing game.
+            </projects-details>
         </company>
 
     </projects>

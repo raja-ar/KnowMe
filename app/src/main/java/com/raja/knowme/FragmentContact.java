@@ -111,7 +111,7 @@ public class FragmentContact extends Fragment {
         //	menu.add(0, v.getId(), 0, mConatctsData.getPhoneNumbers()[count]);
         //	} else
         {
-            menu.setHeaderIcon(R.drawable.ic_mail);
+            menu.setHeaderIcon(R.drawable.mb);
             menu.setHeaderTitle(R.string.mail_me);
             for (int count = 0; count < mConatctsData.getEmailAddress().length; count++)
                 menu.add(0, v.getId(), 0, mConatctsData.getEmailAddress()[count]);

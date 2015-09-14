@@ -51,7 +51,7 @@ import java.util.ArrayList;
 
 public class FragmentProjects extends Fragment {
 
-    private int MAX_COUNT = 2;
+    private int MAX_COUNT = 4;
     private GestureDetector gestureDetector;
     private View.OnTouchListener gestureListener;
 
