@@ -83,9 +83,9 @@
             <projects-details name="King Compass">
                 KingCompass , a simple compass with basic features.
             </projects-details>
-            <projects-details name="TronAr">
-                TronAr,a 3D lightbike racing game similar to the one Shown in the Movie 'Tron'.
-                TronAr is based on the open source glTRON, a 3D lightbike racing game.
+            <projects-details name="RaceAr">
+                RaceAr,a 3D lightbike racing game similar to the one Shown in the Movie 'Tron'.
+                RaceAr is based on the open source glTRON, a 3D lightbike racing game.
             </projects-details>
         </company>
 
