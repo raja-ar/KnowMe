@@ -17,8 +17,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.raja.knowme"
-    android:versionCode="104"
-    android:versionName="1.0.4" >
+    android:versionCode="111"
+    android:versionName="1.1.1" >
 
     <uses-sdk
         android:minSdkVersion="9"
