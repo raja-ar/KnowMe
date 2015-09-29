@@ -87,6 +87,9 @@
                 Race Ar,a 3D lightbike racing game similar to the one Shown in the Movie 'Tron'.
                 Race Ar is based on the open source glTRON, a 3D lightbike racing game.
             </projects-details>
+            <projects-details name="FotoAr">
+                FotoAr is a powerful photo editing Tool based on world's leading Platform ,Aviary.
+            </projects-details>
         </company>
 
     </projects>

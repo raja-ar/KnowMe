@@ -25,8 +25,8 @@ android {
         applicationId "com.raja.knowme"
         minSdkVersion 9
         targetSdkVersion 23
-        versionCode 111
-        versionName '1.1.1'
+        versionCode 115
+        versionName '1.1.5'
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_5
             targetCompatibility JavaVersion.VERSION_1_5

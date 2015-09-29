@@ -72,20 +72,23 @@
     <!-- Projects detials -->
     <projects>
         <company name="FreeLancer">
-            <projects-details name="King Converter">
-                King Converter , A simple and easy-to-use unit converter to handle any conversion you'll ever
+            <projects-details name="Convert Ar">
+                Convert Ar , A simple and easy-to-use unit converter to handle any conversion you'll ever
                 need.
             </projects-details>
-            <projects-details name="Know Me">
-                Know Me , A simple,elegant App just to show Printed-“Resumes can’t really weigh how
+            <projects-details name="Know Ar">
+                Know Ar , A simple,elegant App just to show Printed-“Resumes can’t really weigh how
                 good a programmer you are,” Ravisankar-Founder of HackerRank.
             </projects-details>
-            <projects-details name="King Compass">
-                KingCompass , a simple compass with basic features.
+            <projects-details name="Compass Ar">
+                Compass Ar, a simple compass with basic features.
             </projects-details>
             <projects-details name="RaceAr">
-                RaceAr,a 3D lightbike racing game similar to the one Shown in the Movie 'Tron'.
-                RaceAr is based on the open source glTRON, a 3D lightbike racing game.
+                Race Ar,a 3D lightbike racing game similar to the one Shown in the Movie 'Tron'.
+                Race Ar is based on the open source glTRON, a 3D lightbike racing game.
+            </projects-details>
+            <projects-details name="FotoAr">
+                FotoAr is a powerful photo editing Tool based on world's leading Platform ,Aviary.
             </projects-details>
         </company>
 
